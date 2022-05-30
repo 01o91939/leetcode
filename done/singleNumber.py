@@ -32,6 +32,7 @@ def singleNumber(nums: List[int]) -> int:
         result = n ^ result
     return result
 
+
 class TestProblems(unittest.TestCase):
     def test_single_number(self):
         actual = singleNumber([2,2,1])

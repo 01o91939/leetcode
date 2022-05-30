@@ -35,7 +35,7 @@ def isPalindrome(s: str) -> bool:
 
 class TestProblems(unittest.TestCase):
 
-    def test_find_repeated_dna_sequences(self):
+    def test_valid_palindrome(self):
         actual = isPalindrome("A man, a plan, a canal: Panama")
         self.assertTrue(actual)
 

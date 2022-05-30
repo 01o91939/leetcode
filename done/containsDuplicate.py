@@ -1,7 +1,6 @@
 """
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
-
 Example 1:
 
 Input: nums = [1,2,3,1]
@@ -29,6 +28,10 @@ def containsDuplicate(nums: List[int]) -> bool:
             return True
         hashset.add(number)
     return False
+
+# N: number of elements in the array
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 
 class TestProblems(unittest.TestCase):
     def test_contains_duplicate(self):

@@ -2,19 +2,20 @@
 
 DONE
 - Easy		
-	- Contains Duplicates		
-	- Single Number		
+	- Contains Duplicates
+    - Remove Duplicates in Sorted Array 		
+	- Single Number	
+    - Valid Anagram	
 	- Valid Palindrome		
 	- Percentage Letter
     - Two Sums				
-	- Valid Anagram
+
 - Medium
-    - Repeated DNA Sequence
     - Two Sums II		
+    - Repeated DNA Sequence
 	
 
 IN PROGRESS    
-- Remove Duplicates in Sorted Array 
 - Group Anagrams  
 - Top K frequent elements
 			

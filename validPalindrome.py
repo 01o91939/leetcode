@@ -33,6 +33,10 @@ def isPalindrome(s: str) -> bool:
     reversed_string = new_string[::-1]
     return new_string == reversed_string
 
+# N - number of characters in string
+# Time Complexity: O(N)
+# Space Complexity: O(N) ?
+
 class TestProblems(unittest.TestCase):
 
     def test_valid_palindrome(self):

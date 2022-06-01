@@ -32,6 +32,9 @@ def singleNumber(nums: List[int]) -> int:
         result = n ^ result
     return result
 
+# N - number of elements in array
+# Time Complexity: O(N)
+# Space Complexity: O(1)
 
 class TestProblems(unittest.TestCase):
     def test_single_number(self):

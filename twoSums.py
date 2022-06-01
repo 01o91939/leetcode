@@ -27,12 +27,16 @@ import unittest
 from typing import List
 
 def twoSums(nums: List[int], target: int) -> List[int]:
-    hashmap = {} # value:index [2,7,11,15] -> [(2, 0), (7, 1), (11, 2), (15, 3)]
+    dictionary = {} # value:index [2,7,11,15] -> [(2, 0), (7, 1), (11, 2), (15, 3)]
     for index, number in enumerate(nums):
         diff = target - number
-        if diff in hashmap:
-            return [index, hashmap[diff]]
-        hashmap[number] = index
+        if diff in dictionary:
+            return [index, dictionary[diff]]
+        dictionary[number] = index
+
+# N - number of elements in array 'nums'
+# Time Complexity: O(N)
+# Space Complexity: O(N)
 
 class TestProblems(unittest.TestCase):
     def test_two_sums(self):

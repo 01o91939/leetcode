@@ -14,7 +14,7 @@ DONE
 	
 
 IN PROGRESS    
-- Remove Duplicates
+- Remove Duplicates in Sorted Array 
 - Group Anagrams  
 - Top K frequent elements
 			

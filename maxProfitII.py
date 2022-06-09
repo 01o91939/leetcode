@@ -38,6 +38,9 @@ def maxProfix(prices: List[int]) -> int:
             max_profit += prices[i] - prices[i-1]
     return max_profit
 
+# N - numbers in the array
+# Time Complexity: O(N)
+# Space Complexity: O(1)
 
 class TestProblems(unittest.TestCase):
     def test_max_profit(self):

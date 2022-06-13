@@ -57,8 +57,8 @@ class TestProblems(unittest.TestCase):
         expected_1 = "y"
         self.assertTrue(actual_1, expected_1)
 
-        actual = findTheDifference_Sorted("abcd", "abcde")
-        expected = "e"
+        actual = findTheDifference_Sorted("aabb", "aaabb")
+        expected = "a"
         self.assertTrue(actual, expected)
 
         actual_1 = findTheDifference_Sorted("", "y")

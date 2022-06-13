@@ -10,6 +10,7 @@ DONE
     6. Percentage Letter
     7. Two Sums	
     8. Max Profit II (Best Time to Buy and Sell Stock)  
+    9. Find The Difference
 
 - Medium
     1. Two Sums II		

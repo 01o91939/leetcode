@@ -14,7 +14,6 @@ Output: [1]
 
 """
 import collections
-import re
 from typing import List
 import unittest
 

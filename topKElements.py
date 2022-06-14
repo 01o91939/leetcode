@@ -18,6 +18,13 @@ import re
 from typing import List
 import unittest
 
+def topKElements(nums: List[int], k: int) -> List[int]:
+    count = {}
+    results = []
+
+    for num in nums:
+        count[num] = 1 + nums.get(num, 0)
+        
 
 # using Counter.most_common(), which returns a list of the n most common elements 
 # and their counts from the most common to the least

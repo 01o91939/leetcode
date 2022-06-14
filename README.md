@@ -12,6 +12,7 @@ DONE
     8. Max Profit II (Best Time to Buy and Sell Stock)  
     9. Find The Difference
     10. Concatenation of Array
+    11. Plus One
 
 - Medium
     1. Two Sums II		

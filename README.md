@@ -13,6 +13,7 @@ DONE
     9. Find The Difference
     10. Concatenation of Array
     11. Plus One
+    12. Intersection of Two Arrays II
 
 - Medium
     1. Two Sums II		

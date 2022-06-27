@@ -22,6 +22,9 @@ DONE
     4. Subdomain Visit Count	
     5. Top K frequent elements
     6. Sum of Two Integers
+    7. Rotate Image
+    8. Letter Combinations of a Phone Number
+    9. Word Search
 	
 
 IN PROGRESS    

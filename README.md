@@ -1,7 +1,4 @@
-# leetcode
-
-DONE
-- Easy		
+## EASY		
 	1. Contains Duplicates
     2. Remove Duplicates in Sorted Array 		
 	3. Single Number	
@@ -18,8 +15,8 @@ DONE
     14. Maximum Depth of Binary Tree
     15. Path Sum
     16. Invert Tree
-
-- Medium
+#
+## MEDIUM
     1. Two Sums II		
     2. Repeated DNA Sequence
     3. Group Anagrams
@@ -30,14 +27,3 @@ DONE
     8. Letter Combinations of a Phone Number
     9. Word Search
     10. Path Sum II
-	
-
-IN PROGRESS    
-
-			
-			
-			
-			
-			
-			
-			

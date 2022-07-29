@@ -27,6 +27,14 @@
     7. Rotate Image
     8. Letter Combinations of a Phone Number
     9. Word Search
+    10. Spiral Matrix
 ##
-    10. Path Sum II
-    11. Number of Islands
+    11. Path Sum II
+    12. Kth Smallest Element
+    13. Count Complete Tree Nodes
+    14. Closest Exit 
+    15. Embedded Word
+    16. Island Size 
+    17. Number of Islands
+    18. Max Area of Island
+    19. 3Sum

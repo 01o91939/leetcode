@@ -11,7 +11,6 @@
     10. Concatenation of Array
     11. Plus One
     12. Intersection of Two Arrays II
-##
     13. Same Tree
     14. Maximum Depth of Binary Tree
     15. Path Sum
@@ -27,14 +26,12 @@
     7. Rotate Image
     8. Letter Combinations of a Phone Number
     9. Word Search
-    10. Spiral Matrix
-##
-    11. Path Sum II
-    12. Kth Smallest Element
-    13. Count Complete Tree Nodes
-    14. Closest Exit 
-    15. Embedded Word
-    16. Island Size 
-    17. Number of Islands
-    18. Max Area of Island
-    19. 3Sum
+    10. Path Sum II
+    11. Kth Smallest Element
+    12. Count Complete Tree Nodes
+    13. Closest Exit 
+    14. Embedded Word
+    15. Island Size 
+    16. Number of Islands
+    17. Max Area of Island
+    18. 3Sum

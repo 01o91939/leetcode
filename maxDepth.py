@@ -12,6 +12,7 @@ Output: 2
 
 """
 
+from queue import Queue
 import unittest
 from typing import Optional
 
@@ -29,9 +30,57 @@ def maxDepth(root: Optional[TreeNode]) -> int:
         count_right = maxDepth(root.right)
         return max(count_left, count_right) + 1
 
+# Time complexity: O(N)
+# Space complexity: O(N)
+
+# DFS
+def maxDepth_stack(root: Optional[TreeNode]) -> int:
+    if root is None:
+        return 0
+    stack = []
+    height_stack = []
+    max_height = 0
+    while stack:
+        node = stack.pop()
+        print(node)
+        height = height_stack.pop()
+
+        max_height = max(max_height, height)
+
+        if node.left:
+            stack.append(node.left)
+            height_stack.append(height+1)
+        if node.right:
+            stack.append(node.right)
+            height_stack.append(height+1)
+    return max_height
+
+# BFS
+def maxDepthBFS(root: Optional[TreeNode]) -> int:
+    if root is None:
+        return 0
+    queue = []
+    height_stack = []
+    max_height = 0
+    while queue.em:
+        node = queue.head
+        height = height_stack.head
+
+        max_height = max(max_height, height)
+
+        if node.left:
+            queue.append(node.left)
+            height_stack.append(height+1)
+        if node.right:
+            queue.append(node.right)
+            height_stack.append(height+1)
+    return max_height
+
+
+
 class TestProblems(unittest.TestCase):
     def test_max_depth(self):
-        actual = maxDepth(TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(17))))
+        actual = maxDepth_stack(TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(17))))
         expected = 3
         self.assertEqual(actual, expected)
 

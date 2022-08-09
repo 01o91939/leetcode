@@ -25,7 +25,7 @@ import unittest
 def kthLargest(nums: List[int], k: int) -> int:
     heap = []
     for i in range(len(nums)):
-        heapq.heappush(heap, i)
+        heapq.heappush(heap, nums[i])
     
         if len(heap) > k:
             heapq.heappop(heap)

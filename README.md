@@ -21,7 +21,7 @@
     2. Repeated DNA Sequence
     3. Group Anagrams
     4. Subdomain Visit Count	
-    5. Top K frequent elements
+    5. Top K frequent Elements
     6. Sum of Two Integers
     7. Rotate Image
     8. Letter Combinations of a Phone Number
@@ -36,3 +36,4 @@
     17. Max Area of Island
     18. 3Sum
     19. Top K Frequent Words
+    20. Kth Largest Element in an Array

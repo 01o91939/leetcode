@@ -18,12 +18,21 @@ from typing import List
 import unittest
 
 def topKElements(nums: List[int], k: int) -> List[int]:
-    count = {}
-    results = []
-
+    element_count = collections.defaultdict(lambda:0)
     for num in nums:
-        count[num] = 1 + nums.get(num, 0)
-        
+        element_count[num] += 1
+        dict_list = element_count.items()
+        sorted_elements = sorted(dict_list, key=lambda kv: (kv[1]*(-1)))
+    
+    result = []
+    for num, count in sorted_elements:
+        result.append(num)
+
+    return result[:k]    
+
+# N - number of elements in array 'nums'
+# Time Complexity: O(NlogN)
+# Space Complexity: O(N)
 
 # using Counter.most_common(), which returns a list of the n most common elements 
 # and their counts from the most common to the least
@@ -42,6 +51,14 @@ class TestProblems(unittest.TestCase):
         self.assertCountEqual(actual, expected)
 
         actual_1 = topKElements_counter([1], 1)
+        expected_1 = [1]
+        self.assertCountEqual(actual_1, expected_1)
+
+        actual = topKElements([1,1,1,2,2,3], 2)
+        expected = [1, 2]
+        self.assertCountEqual(actual, expected)
+
+        actual_1 = topKElements([1], 1)
         expected_1 = [1]
         self.assertCountEqual(actual_1, expected_1)
 

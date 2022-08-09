@@ -18,8 +18,8 @@ Explanation: "the", "is", "sunny" and "day" are the four most frequent words, wi
 """
 
 import collections
+import heapq
 from typing import List
-from unittest import result
 import unittest
 
 def topKWords_dict(words:List[str], k: int) -> List[str]:
@@ -44,11 +44,35 @@ def topKWords_dict(words:List[str], k: int) -> List[str]:
 # N - number of words in array 'words'
 # Time Complexity: O(Nlog)
 # Space Complexity: O(N)
+
+def topKWords_heap(words:List[str], k: int) -> List[str]:
+    word_counter = collections.Counter(words).items()
+    heap = []
+    heapq.heapify(heap)
+
+    for word, count in word_counter:
+       heapq.heappush(heap, (-count, word))
     
- 
+    result = []
+    for i in range(k):
+        result.append(heapq.heappop(heap)[1])
+    
+    return result
+
+# N - number of words in array 'words'
+# Time Complexity: O(Nlog)
+# Space Complexity: O(N)  
         
 class TestProblems(unittest.TestCase):
     def test_top_k_words(self):
+        actual = topKWords_heap(["i","love","leetcode","i","love","coding"], 2)
+        expected = ["i","love"]
+        self.assertCountEqual(actual, expected)
+
+        actual_1 = topKWords_heap(["the","day","is","sunny","the","the","the","sunny","is","is"], 4)
+        expected_1 = ["the","is","sunny","day"]
+        self.assertCountEqual(actual_1, expected_1)
+
         actual = topKWords_dict(["i","love","leetcode","i","love","coding"], 2)
         expected = ["i","love"]
         self.assertCountEqual(actual, expected)
@@ -56,7 +80,6 @@ class TestProblems(unittest.TestCase):
         actual_1 = topKWords_dict(["the","day","is","sunny","the","the","the","sunny","is","is"], 4)
         expected_1 = ["the","is","sunny","day"]
         self.assertCountEqual(actual_1, expected_1)
-
 
 if __name__ == '__main__':
     unittest.main()

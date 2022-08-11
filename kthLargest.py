@@ -23,6 +23,14 @@ import unittest
 
 
 def kthLargest(nums: List[int], k: int) -> int:
+    heap = [-x for x in nums]
+    heapq.heapify(nums)
+    for i in range(k-1):
+        heapq.heappop(heap)
+
+    return -heapq.heappop(heap)
+
+def kthLargestII(nums: List[int], k: int) -> int:
     heap = []
     for i in range(len(nums)):
         heapq.heappush(heap, nums[i])
@@ -32,7 +40,6 @@ def kthLargest(nums: List[int], k: int) -> int:
     print(heap)
 
     return heapq.heappop(heap)
-
 
 class TestProblems(unittest.TestCase):
     def test_top_k_elements(self):
